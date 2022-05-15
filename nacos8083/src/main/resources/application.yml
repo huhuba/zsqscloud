@@ -1,0 +1,20 @@
+server:
+  port: 8083
+
+Spring:
+  application:
+    name: nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: '*'
+
+server-url:
+  nacos-user-service: http://nacos-provider
