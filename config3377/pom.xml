@@ -24,6 +24,7 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
             <version>2.2.7.RELEASE</version>
         </dependency>
+
         <!--配置中心？什么情况下会生效-->
 <!--        <dependency>
             <groupId>com.alibaba.cloud</groupId>

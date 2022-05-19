@@ -9,7 +9,6 @@ Spring:
       discovery:
         server-addr: localhost:8848
 
-
 management:
   endpoint:
     web:
