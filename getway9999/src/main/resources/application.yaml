@@ -11,7 +11,7 @@ spring:
         locator:
           enabled: true #该值默认为false；设置为true时，可将serviceId作为将要路由的服务名称
 # method 1:将id作为服务名称
-#      routes:  #??
+#      routes:  #
 #        - id: nacos-provider #??id  可以随便起，但是最好给服务名称一致，
 #          uri: http://localhost:9001 #服务的域名和端口
 #          predicates: #断言
@@ -19,7 +19,7 @@ spring:
 #method 2:不需要路由，直接通过服务名称访问，http://localhost:9999/nacos-provider/zsq/get
 #问题:暴露服务名称,过于灵活
 #method 3: 手动设置负载均衡 uri: lb://nacos-provider
-      routes:  #??
+      routes:  #
         - id: nacos-provider
           uri: lb://nacos-provider #手动设置负载均衡，bl://+服务名称， lb://nacos-provider
           predicates:
